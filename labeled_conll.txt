@@ -1,0 +1,254 @@
+3pcs B-PRODUCT
+silicon I-PRODUCT
+brush I-PRODUCT
+spatulas I-PRODUCT
+እስከ O
+260°c O
+ሙቀት O
+መቆቆም O
+የሚችል O
+ዋጋ B-PRICE
+550 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+ስሪ O
+ኤም O
+ሲቲ O
+ሞል O
+
+አል B-PRODUCT
+ቀሚስ I-PRODUCT
+ዋጋ B-PRICE
+1000 I-PRICE
+ብር I-PRICE
+ቦሌ B-LOC
+መዳህኒዓለም I-LOC
+አካባቢ O
+
+ጫማ B-PRODUCT
+ለቦቶ I-PRODUCT
+ዋጋ B-PRICE
+1200 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+ፒያሳ O
+
+ቲሸርት B-PRODUCT
+ለወንድ I-PRODUCT
+ዋጋ B-PRICE
+800 I-PRICE
+ብር I-PRICE
+መገናኛ B-LOC
+አካባቢ O
+
+ቦርሳ B-PRODUCT
+ለሴቶች I-PRODUCT
+ዋጋ B-PRICE
+1500 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+ሜክሲኮ O
+
+ማቀዝቀዣ B-PRODUCT
+ዋጋ B-PRICE
+25000 I-PRICE
+ብር I-PRICE
+ቦሌ B-LOC
+ልደታ I-LOC
+
+ስልክ B-PRODUCT
+ሳምሰንግ I-PRODUCT
+ዋጋ B-PRICE
+12000 I-PRICE
+ብር I-PRICE
+ፒያሳ B-LOC
+አካባቢ O
+
+ሰዓት B-PRODUCT
+ለወንድ I-PRODUCT
+ዋጋ B-PRICE
+2000 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+
+ኮት B-PRODUCT
+ለልጆች I-PRODUCT
+ዋጋ B-PRICE
+900 I-PRICE
+ብር I-PRICE
+መርካቶ B-LOC
+ማእከል O
+
+ብርድ B-PRODUCT
+ልብስ I-PRODUCT
+ዋጋ B-PRICE
+700 I-PRICE
+ብር I-PRICE
+ቦሌ B-LOC
+ሮድ I-LOC
+
+ማሽን B-PRODUCT
+ለቡና I-PRODUCT
+ዋጋ B-PRICE
+3500 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+ሲኤምሲ O
+
+ጃኬት B-PRODUCT
+ለሴቶች I-PRODUCT
+ዋጋ B-PRICE
+1800 I-PRICE
+ብር I-PRICE
+ፒያሳ B-LOC
+ማእከል O
+
+ካሜራ B-PRODUCT
+ኒኮን I-PRODUCT
+ዋጋ B-PRICE
+30000 I-PRICE
+ብር I-PRICE
+ቦሌ B-LOC
+ሜዳ I-LOC
+
+ሶፋ B-PRODUCT
+ለሳሎን I-PRODUCT
+ዋጋ B-PRICE
+45000 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+
+ማቅ B-PRODUCT
+ለጨቅላ I-PRODUCT
+ዋጋ B-PRICE
+600 I-PRICE
+ብር I-PRICE
+ሜክሲኮ B-LOC
+አካባቢ O
+
+ቦት B-PRODUCT
+ለወንድ I-PRODUCT
+ዋጋ B-PRICE
+2200 I-PRICE
+ብር I-PRICE
+ቦሌ B-LOC
+ልደታ I-LOC
+
+ሻምፑ B-PRODUCT
+ለፀጉር I-PRODUCT
+ዋጋ B-PRICE
+400 I-PRICE
+ብር I-PRICE
+ፒያሳ B-LOC
+ማእከል O
+
+ስኒከር B-PRODUCT
+አዲዳስ I-PRODUCT
+ዋጋ B-PRICE
+3500 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+
+ማንቀሻ B-PRODUCT
+ለልጆች I-PRODUCT
+ዋጋ B-PRICE
+500 I-PRICE
+ብር I-PRICE
+መርካቶ B-LOC
+ማእከል O
+
+ልብስ B-PRODUCT
+ለሴቶች I-PRODUCT
+ዋጋ B-PRICE
+1100 I-PRICE
+ብር I-PRICE
+ቦሌ B-LOC
+ሮድ I-LOC
+
+ተማሪ B-PRODUCT
+ቦርሳ I-PRODUCT
+ዋጋ B-PRICE
+800 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+ሲኤምሲ O
+
+ኤሌክትሪክ B-PRODUCT
+ምድጃ I-PRODUCT
+ዋጋ B-PRICE
+7000 I-PRICE
+ብር I-PRICE
+ፒያሳ B-LOC
+ማእከል O
+
+ሽንት B-PRODUCT
+ለጨቅላ I-PRODUCT
+ዋጋ B-PRICE
+300 I-PRICE
+ብር I-PRICE
+ቦሌ B-LOC
+ሜዳ I-LOC
+
+ጌጣጌጥ B-PRODUCT
+ለሴቶች I-PRODUCT
+ዋጋ B-PRICE
+2500 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+
+ማጠቢያ B-PRODUCT
+ማሽን I-PRODUCT
+ዋጋ B-PRICE
+20000 I-PRICE
+ብር I-PRICE
+መርካቶ B-LOC
+ማእከል O
+
+ቲቪ B-PRODUCT
+ሳምሰንግ I-PRODUCT
+ዋጋ B-PRICE
+15000 I-PRICE
+ብር I-PRICE
+ቦሌ B-LOC
+ልደታ I-LOC
+
+ሰንሰለት B-PRODUCT
+ለወንድ I-PRODUCT
+ዋጋ B-PRICE
+1800 I-PRICE
+ብር I-PRICE
+ፒያሳ B-LOC
+ማእከል O
+
+ብስክሌት B-PRODUCT
+ለልጆች I-PRODUCT
+ዋጋ B-PRICE
+4000 I-PRICE
+ብር I-PRICE
+አዲስ B-LOC
+አበባ I-LOC
+
+መጽሐፍ B-PRODUCT
+ለተማሪ I-PRODUCT
+ዋጋ B-PRICE
+200 I-PRICE
+ብር I-PRICE
+መርካቶ B-LOC
+ማእከል O
+
+ኮምፒውተር B-PRODUCT
+ላፕቶፕ I-PRODUCT
+ዋጋ B-PRICE
+35000 I-PRICE
+ብር I-PRICE
+ቦሌ B-LOC
+ሮድ I-LOC
