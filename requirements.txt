@@ -1,0 +1,5 @@
+telethon==1.36.0
+pandas==2.2.3
+ethiopic==0.4.0
+numpy==2.1.1
+python-dotenv==1.0.1
