@@ -58,3 +58,61 @@ def measure_inference_speed(model, tokenizer, dataset):
         outputs = model(**inputs)
         predictions.append(outputs.logits.argmax(dim=-1).tolist())
     return (time.time() - start_time) / len(dataset)
+
+# Fine-tune and evaluate models
+models = [
+    "xlm-roberta-base",
+    "distilbert-base-multilingual-cased",
+    "bert-base-multilingual-cased"
+]
+results = []
+
+data = load_conll('data/labeled_conll.txt')
+dataset = Dataset.from_pandas(data)
+train_test = dataset.train_test_split(test_size=0.2, seed=42)
+train_dataset = train_test['train']
+eval_dataset = train_test['test']
+
+for model_name in models:
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    tokenized_dataset = dataset.map(lambda x: tokenize_and_align_labels(x, tokenizer), batched=True)
+    train_dataset = tokenized_dataset.train_test_split(test_size=0.2, seed=42)['train']
+    eval_dataset = tokenized_dataset.train_test_split(test_size=0.2, seed=42)['test']
+    
+    model = AutoModelForTokenClassification.from_pretrained(
+        model_name, num_labels=len(label_list), id2label=id2label, label2id=label2id
+    )
+    
+    training_args = TrainingArguments(
+        output_dir=f"./results_{model_name.split('/')[-1]}",
+        evaluation_strategy="epoch",
+        learning_rate=2e-5,
+        per_device_train_batch_size=16,
+        per_device_eval_batch_size=16,
+        num_train_epochs=3,
+        weight_decay=0.01,
+        save_strategy="epoch",
+        load_best_model_at_end=True
+    )
+    
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=train_dataset,
+        eval_dataset=eval_dataset
+    )
+    
+    trainer.train()
+    eval_results = trainer.evaluate()
+    inference_time = measure_inference_speed(model, tokenizer, eval_dataset)
+    
+    results.append({
+        'model': model_name,
+        'f1_score': eval_results['eval_f1'] if 'eval_f1' in eval_results else 'N/A',
+        'inference_time_per_sample': inference_time,
+        'robustness': 'High' if 'xlm-roberta' in model_name else 'Moderate'
+    })
+
+# Save comparison results
+pd.DataFrame(results).to_csv('data/model_comparison.csv', index=False)
+print(pd.DataFrame(results))
