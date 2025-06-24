@@ -49,3 +49,42 @@ def tokenize_and_align_labels(examples):
     tokenized_inputs['labels'] = labels
     return tokenized_inputs
 
+# Load and prepare dataset
+data = load_conll('data/labeled_conll.txt')
+dataset = Dataset.from_pandas(data)
+tokenized_dataset = dataset.map(tokenize_and_align_labels, batched=True)
+
+# Split dataset
+train_test = tokenized_dataset.train_test_split(test_size=0.2, seed=42)
+train_dataset = train_test['train']
+eval_dataset = train_test['test']
+
+# Initialize model
+model = AutoModelForTokenClassification.from_pretrained(
+    "xlm-roberta-base", num_labels=len(label_list), id2label=id2label, label2id=label2id
+)
+
+# Training arguments
+training_args = TrainingArguments(
+    output_dir="./results",
+    evaluation_strategy="epoch",
+    learning_rate=2e-5,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=16,
+    num_train_epochs=3,
+    weight_decay=0.01,
+    save_strategy="epoch",
+    load_best_model_at_end=True
+)
+
+# Initialize trainer
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=eval_dataset
+)
+
+# Train and save model
+trainer.train()
+trainer.save_model("models/xlm-roberta-ner")
